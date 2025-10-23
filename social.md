@@ -21,18 +21,18 @@
 
     /* Cabeçalho */
     .header {
-      background: linear-gradient(white, #03030300);
+      background: linear-gradient(#6b80f7, #6b80f7);
       padding: 30px;
-      color: #222;
+      color: #000000;
     }
 
     /* Linha divisória estilizada */
     .divider {
-      width: 60%;
-      height: 5px;
-      margin: 10px auto;
+      width: 100%;
+      height: 15px;
+      margin: 1px auto;
       background: linear-gradient(rgba(0, 0, 0, 0.3), #03030300);
-      border-radius: 7px;
+      border-radius: 0px;
     }
 
     /* Container de ícones */
@@ -40,7 +40,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 40px; /* controla a distância entre ícones */
+      gap: 100px; /* controla a distância entre ícones */
       margin-top: 40px;
     }
 
@@ -56,9 +56,7 @@
     }
 
     /* Cores no hover (personalizadas por rede) */
-    .social-links a:hover {
-      transform: scale(1.1);
-    }
+    .social-links a:hover { transform: scale(1.1); }
     .social-links a:nth-child(1):hover { color: #000; }     /* X */
     .social-links a:nth-child(2):hover { color: #ff1664; }  /* Instagram */
     .social-links a:nth-child(3):hover { color: #FF0000; }  /* YouTube */
@@ -85,5 +83,4 @@
   </div>
 </body>
 </html>
-
 ```
