@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  height: 100vh;
+  color: #000000;
+}
+
+/* Cabeçalho */
+.header {
+  background: linear-gradient(#ffffff, #ffffff);
+  padding: 1px;
+  color: #000000;
+  margin: 0px 20px;
+  text-align: left;
+}
+
+/* Linha divisória estilizada */
+.divider {
+  width: 100%;
+  height: 15px;
+  margin: 1px auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), #03030300);
+  border-radius: 0px;
+}
+
+/* Container de ícones */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px; /* controla a distância entre ícones */
+  margin-top: 30px;
+}
+
+/* Estilo dos links */
+.social-links a {
+  text-decoration: none;
+  color: #191919;
+  font-size: 28px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* popup estilizado */
+.social-links a .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Posição acima do ícone */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.social-links a:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* Efeitos no hover */
+.social-links a:hover { transform: scale(1.1); }
+.social-links a:nth-child(1):hover { color: #000; }     /* X */
+.social-links a:nth-child(2):hover { color: #ff1664; }  /* Instagram */
+.social-links a:nth-child(3):hover { color: #FF0000; }  /* YouTube */
